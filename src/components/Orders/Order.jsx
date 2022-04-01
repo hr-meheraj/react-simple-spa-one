@@ -3,7 +3,7 @@ import React from 'react'
 function Order() {
     return (
         <div>
-            <h2 className="text-2xl">Order Page is heee..</h2>
+            <h1>Order Page heere..</h1>
         </div>
     )
 }

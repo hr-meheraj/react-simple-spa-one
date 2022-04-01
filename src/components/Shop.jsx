@@ -1,14 +1,12 @@
 import React from 'react'
-import useFetch from '../hooks/useFetch'
+import { useProducts } from '../hooks/useProducts'
 
 function Shop() {
-    const {data, loading, err} = useFetch('https://restcountries.com/v3.1/all');
+    const [products,setProducts,loading,err] = useProducts('https://mocki.io/v1/2203db5f-4a77-43e4-a849-23ca27e4f12b');
     return (
         <div>
-            <h2 className='text-5xl'>Length :{data.length} </h2>
-            {
-                loading && <h2 className='text-7xl'>Loading.....</h2> 
-            }
+            <h1>Product : {products.length}</h1>
+            <h2>Shop page..</h2>
         </div>
     )
 }

@@ -1,0 +1,16 @@
+nav{
+    background:#112233;
+    color:white;
+    padding:5px 10px;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color:orange;
+}
+nav a:hover{
+    color:blue;
+}
